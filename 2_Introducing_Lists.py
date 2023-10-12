@@ -35,6 +35,7 @@ invited_people.insert(2, "Sami")
 invited_people.append("Tarif")
 message = "You are invited to a fun dinner to my house tonight."
 print(invited_people)
+print(f"I have to feed {len(invited_people)} people tonight!!!\n")
 print(f"Hey! {invited_people[0]} {message}.")
 print(f"Hey! {invited_people[1]} {message}")
 print(f"Hey! {invited_people[2]} {message}")
@@ -59,6 +60,21 @@ for jon2 in invited_people:
 del invited_people[0]
 print(invited_people)
 del invited_people[0]
-print(invited_people)
+print(f"{invited_people} \n")
 
 
+#Solution of problem - 2.3(A):
+locations = ['sajek', 'bandarban', 'mithamain', 'rangamati', "cox's bazar"]
+print(locations)
+print(sorted(locations))
+print(locations)
+print(sorted(locations, reverse=True))
+print(locations)
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+locations.sort()
+print(locations)
+locations.sort(reverse=True)
+print(locations)
