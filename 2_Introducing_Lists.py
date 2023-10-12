@@ -38,10 +38,22 @@ print(invited_people)
 print(f"Hey! {invited_people[0]} {message}.")
 print(f"Hey! {invited_people[1]} {message}")
 print(f"Hey! {invited_people[2]} {message}")
-
 for people in invited_people:
     print(f"Hey! {people}, {message}")
 
 
-
 #Solution of problem - 2.2(D):
+print("I am really sorry to say that I can invite only two people to dinner.")
+popped_guist = invited_people.pop()
+print(f"Sorry, {popped_guist} I can't invite you tonight.")
+popped_guist1 = invited_people.pop()
+print(f"Sorry, {popped_guist1} I can't invite you tonight.")
+popped_guist2 = invited_people.pop()
+print(f"Sorry, {popped_guist2}I can't invite you.")
+popped_guist3 = invited_people.pop()
+print(f"Hey! {popped_guist3} get the hell out of here. You are not invited to my party anymore.")
+popped_guist4 = invited_people.pop()
+print(f"Ok bye, {popped_guist4}.")
+popped_guist5 = invited_people.pop()
+print(f"Mor, {popped_guist5}")
+
