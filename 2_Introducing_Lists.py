@@ -60,3 +60,5 @@ del invited_people[0]
 print(invited_people)
 del invited_people[0]
 print(invited_people)
+
+
