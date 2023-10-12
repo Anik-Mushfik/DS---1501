@@ -34,11 +34,13 @@ invited_people.insert(0, "Ripon")
 invited_people.insert(2, "Sami")
 invited_people.append("Tarif")
 message = "You are invited to a fun dinner to my house tonight."
+print(invited_people)
 print(f"Hey! {invited_people[0]} {message}.")
 print(f"Hey! {invited_people[1]} {message}")
 print(f"Hey! {invited_people[2]} {message}")
+
 for people in invited_people:
-    print(f"Hey! {invited_people} {message}")
+    print(f"Hey! {people}, {message}")
 
 
 
