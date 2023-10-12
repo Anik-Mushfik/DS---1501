@@ -49,11 +49,14 @@ print(f"Sorry, {popped_guist} I can't invite you tonight.")
 popped_guist1 = invited_people.pop()
 print(f"Sorry, {popped_guist1} I can't invite you tonight.")
 popped_guist2 = invited_people.pop()
-print(f"Sorry, {popped_guist2}I can't invite you.")
+print(f"Sorry, {popped_guist2} I can't invite you.")
 popped_guist3 = invited_people.pop()
-print(f"Hey! {popped_guist3} get the hell out of here. You are not invited to my party anymore.")
-popped_guist4 = invited_people.pop()
-print(f"Ok bye, {popped_guist4}.")
-popped_guist5 = invited_people.pop()
-print(f"Mor, {popped_guist5}")
+print(f"Hey! {popped_guist3} get the hell out of here. You are not invited to my party anymore.\n")
 
+for jon2 in invited_people:
+    print(f"{jon2} you are still invited to the dinner.")
+
+del invited_people[0]
+print(invited_people)
+del invited_people[0]
+print(invited_people)
