@@ -78,3 +78,6 @@ locations.sort()
 print(locations)
 locations.sort(reverse=True)
 print(locations)
+
+
+#This is the end of this practice sheet.
