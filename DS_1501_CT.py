@@ -23,7 +23,7 @@ else:
     list.pop()
     print(list)
 if len(list) == 1:
-    print("Balda diso amar")
+    print("Not gonna work")
 else:
     odd = 0
     even = 0
@@ -37,3 +37,25 @@ else:
             odd += int(x)
     print(f"Sum of odd index:{odd}")
     print(f"Sum of even index:{even}")
+
+#Or,
+a = []
+n = int(input("ENTER NUMBER OF ELEMENTS : "))
+for i in range (n):
+    a.append(input("ENTER ELEMENT : "))
+print(a)
+odd = 0
+even = 0
+for x in a:
+    if n != 1 :
+        indx = a.index(x)
+        if indx%2 == 0 and indx>0:
+            even += int(x)
+        elif indx == 0:
+            even+= int(x)
+        else:
+            odd += int(x)
+        print(odd)
+        print(even)
+    else:
+        print("Not gonna work")
