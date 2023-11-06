@@ -59,3 +59,22 @@ for x in a:
         print(even)
     else:
         print("Not gonna work")
+
+
+
+#Sakharyui sir ct
+'''
+In the computer labs of UIU, 35 students can sit together for classes. Write a program in python,
+that will take the number of students admitted in the first trimester of data science program. As the
+students are taking admissions one-by-one, the department has decided to fill up the open sections
+full to their capacity and then open a new section. For example, if 90 students are admitted, 3
+sections will be needed. First section will be full first, 35 students then second section will be full
+with another 35 students and the last section will have only 20 students. Your program will print
+will be needed for these newly admitted students and the size of the last section.
+'''
+
+num = int(input("Enter the number of admitted students: "))
+if num % 35 ==0:
+    print(f"For {num} newly admitted students {(num // 35)} sections will be needed and the size of the last section is 35 students.")
+else:
+    print(f"For {num} newly admitted students {(num // 35) + 1} sections will be needed and the size of the last section is {num % 35} students.")
