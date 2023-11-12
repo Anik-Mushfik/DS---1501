@@ -68,7 +68,20 @@ print(lst[-3:])
 
 
 #3(b)-
+unit=float(input("enter the consumed unit:"))
 
+if unit<=50:
+    Totall_Bill = (unit*0.50)
+elif unit<=150:
+     Totall_Bill = ((50*0.50)+(unit-50)*0.75)
+elif unit<=250:
+     Totall_Bill = ((50*0.50)+(100*0.75)+((unit-150)*1.20))
+elif unit>250:
+     Totall_Bill = ((50*0.50)+(100*0.75)+(100*1.20)+((unit-250)*1.50))
+
+surcharge = Totall_Bill * 0.2
+Bill = surcharge + Totall_Bill
+print(Bill)
 
 
 #3(c)-
