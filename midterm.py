@@ -1,3 +1,15 @@
+#1(b)- 
+sum = 10
+for i in range(1,4):
+    sum = sum + 10
+    for j in range(1,4):
+        sum = sum + 20
+        for k in range(1,4):
+            sum = sum + 30
+print("Total sum: " , sum)
+
+
+
 #1-(c)-
 str = "Data Science, United International University."
 listofwords = []
@@ -45,6 +57,18 @@ for i in listNum:#Vul = range(1,len(listNum)):
     if i > maxi:
         maxi = i
 print(maxi)
+
+
+#3(a)-
+lst = [2,3,4,5,6,7,8]
+print(lst[3:-3])
+print(lst[:])
+print(lst[:-3])
+print(lst[-3:])
+
+
+#3(b)-
+
 
 
 #3(c)-
