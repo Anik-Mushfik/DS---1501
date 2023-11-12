@@ -1,3 +1,10 @@
+# This is the answer of midterm of fall-2023 (1st Trimester):
+
+#1(a)-
+for i in range(2,8,2):
+    print(i*i)
+
+
 #1(b)- 
 sum = 10
 for i in range(1,4):
