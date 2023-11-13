@@ -67,7 +67,7 @@ def lists(L1,L2):
     else:
         return L2sum - L1sum
 print(lists([12,12,13],[40,50,60]))
-
+#Or,
 def lists(L1,L2):
     L1sum = sum(L1)
     L2sum = sum(L2)
@@ -97,3 +97,30 @@ def funcX():
 
 print(funcX())
 print(x)
+
+
+#BC section class- 
+def vowel_count(x):
+    count = 0
+    for i in x:
+        if i in ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):
+            count += 1
+    return count
+
+def mult_str_vow_count(*s):
+    count2 = 0
+    for j in s:
+        count2 += vowel_count
+    return count2
+print(mult_str_vow_count("apple", "Banana"))
+
+
+
+
+def is_prime(num):
+    for i in range(2, num):
+        if num%i == 0:
+            return False
+            return True
+
+print(is_prime(2))
