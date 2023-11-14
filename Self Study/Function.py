@@ -9,3 +9,12 @@ def greet_user(username):
     print(f"Hello, {username}!")
 greet_user("Musfique")
 
+
+#T I Y -
+#8-1:
+def display_message(x):
+    """Describes what I am learning about in this chapter."""
+    print(f"I am learning about {x} in this chapter.")
+
+display_message("Functions")
+
