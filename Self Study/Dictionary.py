@@ -103,3 +103,26 @@ print(f"The alien is {alien_0['color']}.")
 
 alien_0['color'] = 'yellow'
 print(f"The alien is {alien_0['color']}.")
+
+alien_0 = {'color': 'green', 'points': 5, 'x_position': 10, 'y_position': 25, 'speed': 'fast'}
+speed = input("Enter the speed of the alien: (Slow / Medium / Fast)\n").lower()
+alien_0['speed'] = speed
+
+# Move the alien to the right and up.
+# Determine how far to move the alien based on the current speed.
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+    y_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+    y_increment = 2
+else:
+    #This is a fast alien!
+    x_increment = 3
+    y_increment = 3
+
+# New position is the current position plus the increments.
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+alien_0['y_position'] = alien_0['y_position'] + y_increment
+
+print(f"The new position of the alien is - \n X position: {alien_0['x_position']} \n Y posiotion: {alien_0['y_position']}")
