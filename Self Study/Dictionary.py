@@ -61,11 +61,6 @@ course.insert(2, {'trimester': 'fall-2023', 'season': 'sep-jan'})
 print(len(course))
 print(course)
 
-#Exercise - korte hobe
-new = {'department': 'DS', 'credit': 138}
-new.pop(0)
-print(new)
-
 #List in a dectionary -
 tracks = {
     "software": ['project management', 'system analysis', 'soft engg'], 
