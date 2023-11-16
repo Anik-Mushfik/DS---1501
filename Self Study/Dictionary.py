@@ -184,3 +184,17 @@ print(f"Anik's favorite number is {fav_num['anik']}")
 print(f"Ripon's favorite number is {fav_num['ripon']}")
 print(f"Akhi's favorite number is {fav_num['akhi']}")
 
+# 6-3. Glossary:
+glossary = {
+    'print': 'Writes the output of the code in the terminal.', 
+    'input': 'Takes command from the user.', 
+    'terminal': 'The window in the compiler where the output is shown.', 
+    'parentheses': 'First bracket', 
+    'variable': 'Where a value of a code is stored.', 
+    }
+print(f"Print: {glossary['print']} \n")
+print(f"Input: {glossary['input']}\n")
+print(f"Terminal: {glossary['terminal']}\n")
+print(f"Parentheses: \n     {glossary['parentheses']} \n")
+print(f"Variable: \n    {glossary['variable']} \n")
+
