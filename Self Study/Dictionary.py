@@ -85,6 +85,7 @@ for k, v in tracks.items():
 
 
 ### => 'Python Crash Course' Book -
+"""
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0['color'])
 print(alien_0['points'])
@@ -127,3 +128,23 @@ alien_0['y_position'] = alien_0['y_position'] + y_increment
 
 print(f"The new position of the alien is - \n X position: {alien_0['x_position']} \n Y posiotion: {alien_0['y_position']}")
 
+alien_0 = {'color': 'green', 'points': 5}
+del alien_0['points']
+print(alien_0)
+
+#favorite_language.py -
+favorite_language = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phill': 'python',
+    }
+print(favorite_language)
+favorite_language['noah'] = 'java'
+print(favorite_language)
+
+language = favorite_language['noah'].title()
+print(f"Noah's favorite language is {language}.")
+"""
+
+                 
