@@ -18,3 +18,11 @@ def display_message(x):
 
 display_message("Functions")
 
+# 8-2:
+def favourite_book(X):
+    print(f"My favorite book is {X}")
+
+favourite_book("Alice in Wonderland")
+
+
+#Ex - 2:

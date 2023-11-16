@@ -126,3 +126,4 @@ alien_0['x_position'] = alien_0['x_position'] + x_increment
 alien_0['y_position'] = alien_0['y_position'] + y_increment
 
 print(f"The new position of the alien is - \n X position: {alien_0['x_position']} \n Y posiotion: {alien_0['y_position']}")
+
