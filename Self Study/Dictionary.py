@@ -155,3 +155,32 @@ speed_value2 = alien_0.get('speed')
 print(speed_value)
 print(speed_value2) # This will print 'None' and 'None' means - 'no value exist'
 """
+
+
+# Try It Yourself - 6:
+# 6-1. Person:
+person = {
+    'first_name': 'musfique', 
+    'last_name': 'ahmed', 
+    'age': 21, 
+    'city': 'dhaka'
+    }
+full_name = person['first_name'].title() + " " + person['last_name']
+print(f"A person I know -")
+print(f"His name is {full_name}.\nHe is {person['age']} years old.")
+print(f"He lives in {person['city']}.")
+
+# 6-2. Favorite Number:
+fav_num = {
+    'musfique': 26, 
+    'ahmed': 95, 
+    'anik': 454, 
+    'ripon': 36, 
+    'akhi': 1385, 
+    }
+print(f"Musfique's favorite number is {fav_num['musfique']}")
+print(f"Ahmed's favorite number is {fav_num['ahmed']}")
+print(f"Anik's favorite number is {fav_num['anik']}")
+print(f"Ripon's favorite number is {fav_num['ripon']}")
+print(f"Akhi's favorite number is {fav_num['akhi']}")
+
