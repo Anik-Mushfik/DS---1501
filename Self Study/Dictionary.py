@@ -85,6 +85,8 @@ for k, v in tracks.items():
 
 
 ### => 'Python Crash Course' Book -
+
+# alien_0.py
 """
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0['color'])
@@ -145,6 +147,11 @@ print(favorite_language)
 
 language = favorite_language['noah'].title()
 print(f"Noah's favorite language is {language}.")
-"""
 
-                 
+# alien_0.py
+alien_0 = {'color': 'green', 'points': 5}
+speed_value = alien_0.get('speed', "This key doesn't exist.")
+speed_value2 = alien_0.get('speed')
+print(speed_value)
+print(speed_value2) # This will print 'None' and 'None' means - 'no value exist'
+"""
