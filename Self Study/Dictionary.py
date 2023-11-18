@@ -154,7 +154,6 @@ speed_value = alien_0.get('speed', "This key doesn't exist.")
 speed_value2 = alien_0.get('speed')
 print(speed_value)
 print(speed_value2) # This will print 'None' and 'None' means - 'no value exist'
-"""
 
 
 # Try It Yourself - 6:
@@ -197,4 +196,16 @@ print(f"Input: {glossary['input']}\n")
 print(f"Terminal: {glossary['terminal']}\n")
 print(f"Parentheses: \n     {glossary['parentheses']} \n")
 print(f"Variable: \n    {glossary['variable']} \n")
+"""
 
+
+# user.py
+user_0 = {
+    'username': 'efermi', 
+    'first': 'enrico', 
+    'last': 'fermi'
+    }
+
+for key, value in user_0.items():
+    print(f"\nKey: {key}")
+    print(f"Value: {value}")
