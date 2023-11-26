@@ -196,7 +196,6 @@ print(f"Input: {glossary['input']}\n")
 print(f"Terminal: {glossary['terminal']}\n")
 print(f"Parentheses: \n     {glossary['parentheses']} \n")
 print(f"Variable: \n    {glossary['variable']} \n")
-"""
 
 
 # user.py
@@ -209,3 +208,17 @@ user_0 = {
 for key, value in user_0.items():
     print(f"\nKey: {key}")
     print(f"Value: {value}")
+"""
+
+
+#favorite_language.py -
+favorite_language = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phill': 'python',
+    }
+for name in favorite_language.keys():
+    print(name.tit)
+for name in favorite_language: #Looping through the list is default.
+    print(name)
