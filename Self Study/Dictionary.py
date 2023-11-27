@@ -404,6 +404,30 @@ for name, languages in favorite_language.items():
         for language in languages:
             print(f"\t{language.title()}")
 
+            
+# many_user.py -
+users = {
+    'musfique': {
+        'first': 'musfique', 
+        'last': 'ahmed', 
+        'location': 'dhaka', 
+        }, 
+    
+    'kallu': {
+        'first': 'kallu',
+        'last': 'mia', 
+        'location': 'chor vata'
+        }, 
+
+    }
+
+for user, info in users.items():
+    print(f"Username: {user}")
+    full_name = f"{info['first']} {info['last']}"
+    print(f"\tFull name: {full_name.title()}")
+    location = info['location']
+    print(f"\tLocatio: {location.title()}")
+
 """
 
 
