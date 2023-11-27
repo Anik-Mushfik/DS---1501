@@ -386,6 +386,24 @@ print(f"You ordered a {pizza['crust']} -crust pizza"
 for topping in pizza['toppings']:
     print(f"\t{topping.title()}")
 
+    
+# favorite_language.py -
+favorite_language = {
+    'jen': ['python', 'rust'], 
+    'sarah': 'c',
+    'edward': ['rust'], 
+    'phill': ['python', 'java', 'haskell'], 
+    }
+
+for name, languages in favorite_language.items():
+    if len(languages) == 1:
+        for language in languages:
+            print(f"{name}'s favorite language is {language.title()}.")        
+    else:
+        print(f"{name}'s favorite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")
+
 """
 
 
