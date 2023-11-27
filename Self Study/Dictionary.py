@@ -289,6 +289,26 @@ print()
 for country in rivers_of_countries.values():
     print(country.title())
 print()
+
+
+# 6-6. Pulling:
+# favorite_language.py
+favorite_language = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phill': 'python',
+    'anik': 'r', 
+    'mushfique': 'java'
+    }
+
+people = ['anas', 'anik', 'mahin', 'mushfique', 'abid', 'jenny', 'edward', 'jayid', 'jen', 'phil']
+
+for person in people:
+    if person in favorite_language.keys():
+        print(f"Thank you {person.title()} for responding.")
+    else:
+        print(f"Hi {person.title()}! I have noticed that you didn't participated in the poll yet. Can you please respond fast?")
 """
 
 
