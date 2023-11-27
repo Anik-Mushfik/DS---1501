@@ -374,6 +374,18 @@ for alien in aliens[:7]:
 for alien in aliens[:10]:
     print(alien)
 
+    
+# pizza.py -
+pizza = {
+    'crust': 'thick', 
+    'toppings': ['mashrooms', 'extra cheez', 'pinaple']
+    }
+
+print(f"You ordered a {pizza['crust']} -crust pizza"
+      "with the following toppings:")
+for topping in pizza['toppings']:
+    print(f"\t{topping.title()}")
+
 """
 
 
