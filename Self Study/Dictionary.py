@@ -56,6 +56,24 @@ print(len(course))
 print(course[0])
 print(course[0].values())
 print(course[0]['title'])
+print(type(course[0]))
+
+#update key value pairs
+course[0]['title']='DS 151'
+print(course)
+
+#camp={'campus':'UIU', 'time':'1.51PM'}
+course.append({'campus':'UIU', 'time':'1.51PM'})
+print(course)
+course.insert(1, {'trimester':'spring 2023', 'classmode':'hybrid'})
+print(course)
+
+del course[2]['instructor']
+print(course)
+
+#modifying a key
+course[0]['course_name']=course[0].pop('title')
+print(course)
 
 #Adding to a list of dictionary - 
 course.append({'campus': 'united city', 'class mode': 'hybrid'})
