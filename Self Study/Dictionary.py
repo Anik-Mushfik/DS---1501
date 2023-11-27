@@ -208,7 +208,6 @@ user_0 = {
 for key, value in user_0.items():
     print(f"\nKey: {key}")
     print(f"Value: {value}")
-"""
 
 
 #favorite_language.py -
@@ -234,4 +233,17 @@ for name in favorite_language:
 if 'kallu' not in favorite_language.keys():
     print(f"Kallu please take our poll.")
 
+for name in sorted(favorite_language.keys()):
+    print(f"{name.title()}'s favorite language is {language}.")
 
+for language in favorite_language.values():
+    print(language.upper())
+
+for language in set(favorite_language.values()):
+    print(language.lower())
+"""
+
+
+
+# TRY IT YOURSELF - 6
+# 6-4. Glassary 2:
