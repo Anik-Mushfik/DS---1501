@@ -219,6 +219,19 @@ favorite_language = {
     'phill': 'python',
     }
 for name in favorite_language.keys():
-    print(name.tit)
-for name in favorite_language: #Looping through the list is default.
+    print(name.title())
+for name in favorite_language: #Looping through keys of a dictionary is default.
     print(name)
+
+friends = ['sarah', 'anik', 'phill']
+for name in favorite_language:
+    print(f"Hi {name.title()}")
+
+    if name in friends: 
+        language  = favorite_language[name].title()
+        print(f"{name.title()}'s favorite language is {language}.")
+
+if 'kallu' not in favorite_language.keys():
+    print(f"Kallu please take our poll.")
+
+
