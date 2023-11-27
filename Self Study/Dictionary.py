@@ -241,9 +241,27 @@ for language in favorite_language.values():
 
 for language in set(favorite_language.values()):
     print(language.lower())
-"""
-
 
 
 # TRY IT YOURSELF - 6
 # 6-4. Glassary 2:
+glossary = {
+    'print': 'Writes the output of the code in the terminal.', 
+    'input': 'Takes command from the user.', 
+    'terminal': 'The window in the compiler where the output is shown.', 
+    'parentheses': 'First bracket', 
+    'variable': 'Where a value of a code is stored.', 
+    }
+
+glossary['title'] = 'Makes only the first carcter upper case and the rest lower case.'
+glossary['upper'] = 'Makes all the caracters upper case.'
+glossary['lower'] = 'Makes all the caracters lower case.'
+glossary['rstrip'] = 'Deletes the space in the right last of the value.'
+glossary['lsrtip'] = 'Deletes the space in the left last of the value.'
+
+for word, meaning in glossary.items():
+    print(f"\n{word.title()}:\t{meaning}")
+"""
+
+
+# 6-5. Rivers:
