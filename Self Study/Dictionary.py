@@ -261,7 +261,34 @@ glossary['lsrtip'] = 'Deletes the space in the left last of the value.'
 
 for word, meaning in glossary.items():
     print(f"\n{word.title()}:\t{meaning}")
-"""
 
 
 # 6-5. Rivers:
+rivers_of_countries = {
+    'nile': 'egypt', 
+    'padma': 'bangladesh', 
+    'amazon': 'brazil', 
+    'ganges': 'india',
+    'mississippi': 'america', 
+    'thames': 'england', 
+    'murray': 'australia', 
+    'orinoco': 'venezuela', 
+    'saint lawrence': 'canada', 
+    'danube': 'europe', 
+    'mekong': 'vietnam', 
+    }
+
+for river, country in rivers_of_countries.items():
+    print(f"The {river.title()} runs through {country.title()}.")
+print()
+
+for river in rivers_of_countries.keys():
+    print(river.title())
+print()
+
+for country in rivers_of_countries.values():
+    print(country.title())
+print()
+"""
+
+
