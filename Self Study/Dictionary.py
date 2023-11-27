@@ -455,9 +455,47 @@ people = [
 
 for person in people:
     full_name = f"{person['first_name']} {person['last_name']}"
-    print(f"\nName: {full_name}"
-          f"\nAge: {person['age']}"
-          f"\nLocation: {person['city']}")
+    print(f"\nName: {full_name.title()}"
+          f"\nAge: {person['age'].title()}"
+          f"\nLocation: {person['city'].title()}")
+
+          
+#6-8. Pets:
+pets = [
+    {
+        'animal_kind': 'cat', 
+        'owner': 'nobita', 
+    }, 
+    {
+        'animal_kind': 'dog', 
+        'owner': 'tarif', 
+    }, 
+    {
+        'animal_kind': 'anaconda', 
+        'owner': 'anik', 
+    }
+]
+
+for pet in pets:
+    print(f"\nAnimal kind: {pet['animal_kind'].title()}"
+          f"\nOwner name: {pet['owner'].title()}")
+
+          
+# 6-9. Favorite Places:
+favorite_places = {
+    'musfique': ['bd', 'us', 'uk', ], 
+    'ahmed': ['aus', 'switzerland', ], 
+    'anik': ['sajek']
+}
+
+for name, places in favorite_places.items():
+    if len(places) == 1:
+        for place in places:
+            print(f"{name.title()}'s favorite place is {place.title()}")
+    else:
+        print(f"{name.title()}'s favorite places are:")
+        for place in places:
+            print(f"\t{place.title()}")
 
 """
 
