@@ -428,6 +428,37 @@ for user, info in users.items():
     location = info['location']
     print(f"\tLocatio: {location.title()}")
 
+    
+
+# Try It Yourselt-6:
+#6-7. People:
+people = [
+    {
+        'first_name': 'musfique', 
+        'last_name': 'ahmed', 
+        'age': 21, 
+        'city': 'dhaka'
+    }, 
+    {
+        'first_name': 'kallu', 
+        'last_name': 'mia', 
+        'age': 121, 
+        'city': 'chora'
+    }, 
+    {
+        'first_name': 'hablu', 
+        'last_name': 'dablu', 
+        'age': 212, 
+        'city': 'uganda'
+    }, 
+]
+
+for person in people:
+    full_name = f"{person['first_name']} {person['last_name']}"
+    print(f"\nName: {full_name}"
+          f"\nAge: {person['age']}"
+          f"\nLocation: {person['city']}")
+
 """
 
 
