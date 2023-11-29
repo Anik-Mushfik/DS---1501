@@ -512,6 +512,34 @@ for name, num in fav_num.items():
     for n in num:
         print(n)
 
+        
+# 6-11. Cities:
+cities = {
+    'dhaka': {
+        'country': 'bangladesh', 
+        'population': 23209616, 
+        'fact': 'it is the city of mousque', 
+        }, 
+    'chittagong': {
+        'country': 'bangladesh', 
+        'population': 5379660, 
+        'fact': 'port city', 
+        }, 
+    'khula': {
+        'country': 'bangladesh', 
+        'population':  955104, 
+        'fact': 'sundarban is located there',
+    }, 
+}
+
+for city, info in cities.items():
+    print(f"City name: {city.title()}")
+    for key, value in info.items():
+        # if type(value) == "<class 'int'>":
+        #     print(f"\t{key.title()}: {value}")
+        # else:
+            # print(f"\t{key.title()}: {value.capitalize()}")
+        print(f"\t{key.title()}: {value}")
 """
 
 
