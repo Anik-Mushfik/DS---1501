@@ -497,6 +497,21 @@ for name, places in favorite_places.items():
         for place in places:
             print(f"\t{place.title()}")
 
+            
+# 6-10. Favourite Numbers:
+fav_num = {
+    'musfique': [26, 83, 23, 3], 
+    'ahmed': [95, 6, 374, 347, 85], 
+    'anik': [454, 28, 37, 123], 
+    'ripon': [36], 
+    'akhi': [1385, 732354356], 
+    }
+
+for name, num in fav_num.items():
+    print(f"{name.title()}'s favorite numbers are:")
+    for n in num:
+        print(n)
+
 """
 
 
