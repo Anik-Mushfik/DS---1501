@@ -456,7 +456,7 @@ people = [
 for person in people:
     full_name = f"{person['first_name']} {person['last_name']}"
     print(f"\nName: {full_name.title()}"
-          f"\nAge: {person['age'].title()}"
+          f"\nAge: {person['age']}"
           f"\nLocation: {person['city'].title()}")
 
           
