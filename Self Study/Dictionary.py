@@ -591,7 +591,42 @@ print(new)
 
 dic4 = {**dic1, **dic2, **dic3} # the ** unpacking operator to include the key-value pairs from multiple dictionaries.
 print(dic4)
+
+
+## Call an item from a nested dictionary :
+import ipaddress
+
+
+menu = {
+    "espresso": {
+        "ingredients": {
+            "water": 50,
+            "coffee": 18,
+        },
+        "cost": 1.5,
+    },
+    "latte": {
+        "ingredients": {
+            "water": 200,
+            "milk": {
+                "cow milk": 15, 
+                "goat milk": 20, 
+            }, 
+            "coffee": 24,
+        },
+        "cost": 2.5,
+    },
+    "cappuccino": {
+        "ingredients": {
+            "water": 250,
+            "milk": 100,
+            "coffee": 24,
+        },
+        "cost": 3.0,
+    }
+}
+
+print(menu["latte"]["ingredients"]["coffee"])
+for i, j in menu["latte"]["ingredients"]["milk"].items():
+    print(f"{i} : {j}")
 """
-
-
-## 
