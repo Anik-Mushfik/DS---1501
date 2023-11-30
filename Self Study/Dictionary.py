@@ -567,5 +567,31 @@ for i in sorted(d.values(), reverse=True):
     key = k[v.index(i)]
     r[key] = d[key]
 print(f"Dictionary in descending order by value : {r}")
+
+
+## Write a Python program to add a key to a dictionary. :
+sample = {0: 10, 1: 20}
+print(f"Sample Dictionary : {sample}")
+
+sample[2] = 30 # Method-1
+sample.update({3: 40}) # Method-2
+
+print(f"Updated Result : {sample}")
+
+
+## Write a Python script to concatenate the following dictionaries to create a new one. :
+dic1={1:10, 2:20}
+dic2={3:30, 4:40}
+dic3={5:50,6:60}
+new = {}
+
+for i in (dic1, dic2, dic3):
+    new.update(i)
+print(new)
+
+dic4 = {**dic1, **dic2, **dic3} # the ** unpacking operator to include the key-value pairs from multiple dictionaries.
+print(dic4)
 """
 
+
+## 
