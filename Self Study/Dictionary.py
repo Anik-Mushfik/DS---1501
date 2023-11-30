@@ -540,6 +540,32 @@ for city, info in cities.items():
         # else:
             # print(f"\t{key.title()}: {value.capitalize()}")
         print(f"\t{key.title()}: {value}")
-"""
 
+
+
+
+
+
+### Random Problems:
+
+## Write a Python program to sort (ascending and descending) a dictionary by value. :
+#d = {'Red': 1, 'Green': 3, 'Black': 5, 'White': 2, 'Pink': 4}
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+print(f"Original dictionary : {d}")
+
+k = [x for x in d.keys()]
+v = [y for y in d.values()]
+s = {}
+r = {}
+
+for i in sorted(d.values()):
+    key = k[v.index(i)]
+    s[key] = d[key]
+print(f"Dictionary in ascending order by value : {s}")
+
+for i in sorted(d.values(), reverse=True):
+    key = k[v.index(i)]
+    r[key] = d[key]
+print(f"Dictionary in descending order by value : {r}")
+"""
 
