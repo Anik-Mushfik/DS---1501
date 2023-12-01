@@ -644,4 +644,25 @@ amount = [y for y in things.values()]
 for i in (sorted(amount, reverse=True)[:3]):
     ind = amount.index(i)
     print(f"{no[ind]} : {i}")
+
+
+# Find out the unique values:
+lst = [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
+value = []
+for i in lst:
+    value.append(*i.values())
+
+snigle = []
+double = []
+for j in value: 
+    if j not in snigle:
+        snigle.append(j)
+    else:
+        double.append(j)
+
+unique = []
+for x in snigle:
+    if x not in double:
+        unique.append(x)
+print(unique)
 """
