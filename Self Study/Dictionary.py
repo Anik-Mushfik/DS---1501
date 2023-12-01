@@ -629,4 +629,19 @@ menu = {
 print(menu["latte"]["ingredients"]["coffee"])
 for i, j in menu["latte"]["ingredients"]["milk"].items():
     print(f"{i} : {j}")
+
+
+# w3 resource - 30:
+# Sample data: {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+# Expected Output:
+# item4 55
+# item1 45.5
+# item3 41.3
+things = {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+no = [x for x in things.keys()]
+amount = [y for y in things.values()]
+
+for i in (sorted(amount, reverse=True)[:3]):
+    ind = amount.index(i)
+    print(f"{no[ind]} : {i}")
 """
