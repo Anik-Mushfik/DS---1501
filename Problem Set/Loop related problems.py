@@ -1,3 +1,21 @@
+# Problem - 1:
+n = int(input())
+for i in range(1, n+1):
+    print(i, end=",")
+# Or,
+print([i for i in range(1, int(input())+1)])
+# Or,
+print(*[i for i in range(1, int(input())+1)])
+# Or,
+n = int(input())
+num = []
+for i in range(1, n+1):
+    num.append(i)
+    num.append(',')
+num.pop()
+print(*num)
+
+
 # Problem - 5:
 x = int(input())
 y = int(input())
