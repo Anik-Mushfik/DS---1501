@@ -1,7 +1,8 @@
 # Problem - 1:
 n = int(input())
-for i in range(1, n+1):
-    print(i, end=",")
+for i in range(1, n):
+    print(i, end=", ")
+print(n)
 # Or,
 print([i for i in range(1, int(input())+1)])
 # Or,
@@ -27,6 +28,26 @@ while x != y:
         print((x**2), end=", ")
         x -= 1
 print("Reached!")
+
+
+# Problem - 6:
+num = int(input("Enter the number: "))
+n = int(input("How many tries?: "))
+player1_win = True
+
+for i in range(n,0,-1):
+    gusse  = int(input())
+    if num == gusse:
+        player1_win = False
+        break
+    else:
+        print(f"Wrong, {i-1} Choice(s) Left!")
+
+if player1_win:
+    print(f"Player-1 wins!")
+else:
+    print(f"Right, Player-2 wins!")
+
 
 # Problem - 9:
 n = int(input())
@@ -73,25 +94,3 @@ for i in range(n):
 for gra in grades:
     no = grades.index(gra) + 1
     print(f"Student {no}: {gra}")
-
-
-
-# Problem - 6:
-num = int(input("Enter the number: "))
-n = int(input("How many tries?: "))
-player1_win = True
-
-for i in range(n,0,-1):
-    gusse  = int(input())
-    if num == gusse:
-        player1_win = False
-        break
-    else:
-        print(f"Wrong, {i-1} Choice(s) Left!")
-
-if player1_win:
-    print(f"Player-1 wins!")
-else:
-    print(f"Right, Player-2 wins!")
-
-
