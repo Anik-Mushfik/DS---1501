@@ -17,6 +17,20 @@ num.pop()
 print(*num)
 
 
+# Problem - 2:
+n = int(input())
+count = 0
+x = 1
+while True:
+    if count == (n-1):
+        break
+    else:
+        print(x, end=", ")
+        x += 2
+        count += 1
+print(x)
+
+
 # Problem - 5:
 x = int(input())
 y = int(input())
