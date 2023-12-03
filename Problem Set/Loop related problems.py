@@ -58,6 +58,13 @@ for i in range(n):
     sum += num
 avarage = sum / n
 print(f"AVG of {n} inputs: {round(avarage,6)}")
+# Or, (Mahi) - 
+num = int(input())
+total = 0
+for i in range(num):
+	total += float(input())
+avg = f"{total/num :.6f}"
+print(f"AVG of {num} input: {avg}")
 
 
 # Problem - 5:
