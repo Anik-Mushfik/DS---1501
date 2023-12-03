@@ -31,6 +31,20 @@ while True:
 print(x)
 
 
+# Problem - 3:
+n = int(input())
+for i in range(1,n+1):
+    if i == n:
+        if  (i%2 != 0):
+            print(1)
+        else:
+            print(0)
+    elif (i%2 != 0):
+        print(1, end=", ")
+    else:
+        print(0, end=", ")
+
+
 # Problem - 5:
 x = int(input())
 y = int(input())
