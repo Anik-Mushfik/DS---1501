@@ -189,3 +189,43 @@ num.pop()
 print(f"{n}! =", end=" ")
 print(*num, end=" ")
 print(f"= {fac}")
+
+
+# Problem - 14:
+n = int(input())
+r = int(input())
+x = n-r
+
+fac = 1
+for i in range(1,n+1):
+    fac *= i
+fac_n = fac
+
+fac = 1
+for i in range(1,r+1):
+    fac *= i
+fac_r = fac
+
+fac = 1
+for i in range(1,x+1):
+    fac *= i
+fac_x = fac
+
+n_c_r = fac_n / (fac_r * fac_x)
+print(int(n_c_r))
+# Or, 
+n=int(input())
+r=int(input())
+
+n_fact,r_fact,x_fact=1,1,1
+for i in range(n,0,-1):
+    n_fact*=i
+    
+for j in range(r,0,-1):
+    r_fact*=j
+    
+for k in range((n-r),0,-1):
+    x_fact*=k
+    
+print(f"nCr= {(n_fact/(r_fact*x_fact))}")
+
