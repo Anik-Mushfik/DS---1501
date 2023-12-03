@@ -45,6 +45,21 @@ for i in range(1,n+1):
         print(0, end=", ")
 
 
+# Problem - 4:
+n = int(input())
+num = list(map(float, input().split()))
+avarage = sum(num) / n
+print(f"AVG of {n} inputs: {round(avarage,6)}") # round(number, joto ghor nibe toto)
+# Or,
+n = int(input())
+sum = 0
+for i in range(n):
+    num = float(input())
+    sum += num
+avarage = sum / n
+print(f"AVG of {n} inputs: {round(avarage,6)}")
+
+
 # Problem - 5:
 x = int(input())
 y = int(input())
