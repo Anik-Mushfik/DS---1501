@@ -173,3 +173,19 @@ for i in range(n-1):
     print(b, end=", ") 
     a, b = b, a + b #coma dile eki time a ekshathe change hobe
 print(b)
+
+
+# Problem - 13:
+n = int(input())
+
+num = []
+fac = 1
+for i in range(n,0,-1):
+    fac *= i
+    num.append(i)
+    num.append('X')
+num.pop()
+
+print(f"{n}! =", end=" ")
+print(*num, end=" ")
+print(f"= {fac}")
