@@ -63,7 +63,7 @@ num = int(input())
 total = 0
 for i in range(num):
 	total += float(input())
-avg = f"{total/num :.6f}"
+avg = f"{total/num :.6f}" # number :.(joto ghor nibe toto)f
 print(f"AVG of {num} input: {avg}")
 
 
@@ -144,3 +144,32 @@ for i in range(n):
 for gra in grades:
     no = grades.index(gra) + 1
     print(f"Student {no}: {gra}")
+
+
+# Problem - 11:
+n = int(input())
+sum = 0
+for i in range(1, n+1):
+    sum += (i**2)*(i+1)
+print(f"Result: {sum}")
+
+
+# Problem - 12:
+n = int(input())
+x = 1
+y = 1
+a = 0
+print(x, end=", ")
+for i in range(n-2):
+    print(x, end=", ")
+    a = x
+    x += y
+    y = a
+print(x)
+# Or, (Nafiz)
+n = int(input())
+a, b = 0, 1  
+for i in range(n-1): 
+    print(b, end=", ") 
+    a, b = b, a + b #coma dile eki time a ekshathe change hobe
+print(b)
