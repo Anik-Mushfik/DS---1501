@@ -127,6 +127,26 @@ user_input = int(input())
 user = str(user_input)
 for i in reversed(user):
     print(i, end="")
+# Or,
+# Get user input for an integer
+number = int(input("Enter an integer: "))
+
+# Initialize variables
+reversed_number = 0
+original_number = abs(number)  # To handle negative numbers
+
+# Reverse the digits using a loop
+while original_number > 0:
+    digit = original_number % 10
+    reversed_number = reversed_number * 10 + digit
+    original_number = original_number // 10
+
+# If the input number was negative, make the reversed number negative
+if number < 0:
+    reversed_number *= -1
+
+# Print the reversed integer
+print(f"Reversed integer: {reversed_number}")
 
 
 # Problem - 9:
@@ -345,3 +365,20 @@ lcm=int((one*two)/gcd)
 
 print(f"GCD: {gcd}")
 print(f"LCM: {lcm}")
+
+
+# Problem - 17:
+n = int(input("Enter the number: "))
+if (n == 1):
+    is_prime = False
+else:
+	is_prime = True
+for i in range(2,(n//2)+1):
+    if (n%i == 0):
+        is_prime = False
+        break
+if is_prime:
+    print("Prime")
+else:
+    print("Not prime")
+
