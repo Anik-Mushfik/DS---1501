@@ -406,3 +406,18 @@ if num == x:
 else:
     print("No")
 
+
+# Problem - 20:
+n = int(input())
+numbers = []
+num = ""
+for i in range(1, n+1):
+    if i != 1:
+    	num = str(number)
+    num = num + str(i)
+    number = int(num)
+    numbers.append(number)
+
+print(sum(numbers))
+
+                ### THE END ###
