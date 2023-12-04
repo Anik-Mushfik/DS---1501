@@ -99,6 +99,36 @@ else:
     print(f"Right, Player-2 wins!")
 
 
+# Problem - 7:
+count = 1
+while True:
+    user = input()
+    if user == 'A':
+        break
+    else:
+        print(f"Input {count}: {user}")
+        count += 1
+# Or,
+out = []
+while True:
+    user = input()
+    if user == 'A':
+        break
+    else:
+        out.append(user)
+
+for i in out:
+    no = out.index(i) + 1
+    print(f"Input {no}: {i}")
+
+
+# Problem - 8:
+user_input = int(input())
+user = str(user_input)
+for i in reversed(user):
+    print(i, end="")
+
+
 # Problem - 9:
 n = int(input())
 grades = []
@@ -229,3 +259,4 @@ for k in range((n-r),0,-1):
     
 print(f"nCr= {(n_fact/(r_fact*x_fact))}")
 
+ 
