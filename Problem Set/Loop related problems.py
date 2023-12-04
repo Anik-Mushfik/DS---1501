@@ -408,6 +408,14 @@ else:
 
 
 # Problem - 20:
+n =int(input())
+num = 0
+sum = 0
+for i in range(1,n+1):
+    num = (num*10)+i
+    sum += num
+print(sum)
+# Or, ekta problem dekhaye but run hoye.
 n = int(input())
 numbers = []
 num = ""
