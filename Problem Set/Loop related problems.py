@@ -259,4 +259,14 @@ for k in range((n-r),0,-1):
     
 print(f"nCr= {(n_fact/(r_fact*x_fact))}")
 
- 
+
+# Problem - 15:
+x = int(input())
+y = int(input())
+print(x**y)
+# Or,
+user = list(map(int, input().split()))
+x = user[0]
+y = user[1]
+print(x**y)
+
