@@ -147,6 +147,18 @@ if number < 0:
 
 # Print the reversed integer
 print(f"Reversed integer: {reversed_number}")
+# Or, 
+# Get user input for an integer
+number = int(input("Enter an integer: "))
+
+# Convert the integer to a string and reverse it
+reversed_str = str(number)[::-1]
+
+# Convert the reversed string back to an integer
+reversed_number = int(reversed_str)
+
+# Print the reversed integer
+print(f"Reversed integer: {reversed_number}")
 
 
 # Problem - 9:
@@ -381,4 +393,16 @@ if is_prime:
     print("Prime")
 else:
     print("Not prime")
+
+
+# Problem - 18:
+n = int(input("Enter the number: "))
+num = str(n)
+x = ""
+for i in reversed(num):
+    x += i
+if num == x:
+    print("Yes")
+else:
+    print("No")
 
