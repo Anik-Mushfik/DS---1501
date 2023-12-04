@@ -270,3 +270,54 @@ x = user[0]
 y = user[1]
 print(x**y)
 
+
+# Problem - 16:
+n1 = int(input())
+n2 = int(input())
+## GCD - 
+gcd_n1 = [1,n1]
+gcd_n2 = [1,n2]
+
+for i in range(2,((n1//2)+1)):
+    if n1%i == 0:
+        gcd_n1.append(i)
+for j in range(2,((n2//2)+1)):
+    if n2%j == 0:
+        gcd_n2.append(j)
+
+for x in sorted(gcd_n1):
+    if x in gcd_n2:
+        pri = x
+print(f"GCD: {pri}")
+## LCM -
+c = n1
+while True:
+    if (c % n1 == 0) and (c % n2 == 0):
+        print(f"LSM: {c}")
+        break
+    c += 1
+# Or,
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+##GCD
+divisors_num2 = []
+divisors_num1 = []
+for x in range(1, num1+1):
+    if (num1 % x == 0):
+        divisors_num1.append(x)
+for y in range(1, num2+1):
+    if (num2 % y == 0):
+        divisors_num2.append(y)
+gcd = 0
+for z in divisors_num1:
+    if (z in divisors_num2) and (z > gcd):
+        gcd = z
+print(f"GCD: {gcd}")
+##LCM
+count = 1
+while 1==1:
+    if (count % num1 == 0.0) and (count % num2 == 0.0):
+        #lcm = count
+        print(f"LCM: {count}")
+        break
+    count += 1
