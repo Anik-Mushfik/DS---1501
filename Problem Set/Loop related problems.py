@@ -321,3 +321,27 @@ while 1==1:
         print(f"LCM: {count}")
         break
     count += 1
+# Or, (Mahi)-
+one=int(input())
+two=int(input())
+
+one_div=[]
+two_div=[]
+common_div=[]
+for x in range(1,one+1):
+	if one % x == 0:
+		one_div.append(x)
+		
+for y in range(1,two+1):
+	if two % y == 0:
+			two_div.append(y)
+
+for x in one_div:
+	if x in two_div:
+		common_div.append(x)
+
+gcd=max(common_div)
+lcm=int((one*two)/gcd)
+
+print(f"GCD: {gcd}")
+print(f"LCM: {lcm}")
