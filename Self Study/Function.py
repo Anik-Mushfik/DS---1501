@@ -49,3 +49,28 @@ describe_pet(pet_name='kutta')
 describe_pet('sagol', 'cow')
 describe_pet('cow', 'sagol') # Ye galat haye
 describe_pet(animal_type='cow', pet_name='sagol') # Ye sahi haye
+
+
+## T I Y -
+# 8-3. T-shirt:
+def make_shirt(size, message):
+    """Print a sentence summarizing- 
+    The size of the shirt and The message printed on it."""
+    print(f"\nHere is the summary of the T-shirt:")
+    print(f'''\tSize: {size} 
+        Message: {message}''')
+    
+make_shirt('XL', "Data Science Department Tour - 2024")
+make_shirt(message='Data Science Department Tour - 2024', size="XXL")
+
+# 8-4. Large Shirt:
+def make_shirt(size='L', message="I love Python!"):
+    """Print a sentence summarizing- 
+    The size of the shirt and The message printed on it."""
+    print(f"\nHere is the summary of the T-shirt:")
+    print(f'''\tSize: {size} 
+        Message: {message}''')
+    
+make_shirt()
+make_shirt(size='M')
+make_shirt(size="Any Size", message="All my friends are TOXIC!\n\t\t They are so rude and always negative...")
