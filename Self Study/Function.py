@@ -144,3 +144,22 @@ print(info)
 info = build_person('musfique', 'ahmed', age= 27)
 print(info)
 
+# greeter.py
+def fromatted_name(first_name, last_name):
+    """Return a full name, neatly formatted."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+while True:
+    print(f"\nPlease enter your name-\n(Enter 'q' to quit.)")
+
+    f_name = input("Enter your first name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Enter your last name: ")
+    if l_name == 'q':
+        break
+
+    name = fromatted_name(first_name=f_name, last_name=l_name)
+    print(f"\nHello, {name}!")
+
