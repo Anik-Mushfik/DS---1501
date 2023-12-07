@@ -163,3 +163,63 @@ while True:
     name = fromatted_name(first_name=f_name, last_name=l_name)
     print(f"\nHello, {name}!")
 
+
+## T I Y -
+# 8-6. City Names:
+def city_country(city, country):
+    message = f"{city}, {country}"
+    return message.title()
+
+mess = city_country('santiago', 'chilie')
+print(f"\"{mess}\"") ##** use print("\word\"") to print something with double qouts.
+
+
+# 8-7 & 8-8. Album & User Album:
+def make_album(artist_name, album_title, num_of_songs= None):
+    album = {'artist': artist_name, 'title': album_title}
+    if num_of_songs:
+        album['songs'] = num_of_songs
+    # print(album)
+    return album
+
+while True:
+    print(f"\nPlease enter the informations about the album-")
+    print("(Enter 'q' to quit.)")
+    name = input("Enter artist name: ")
+    if (name=='q'):
+        break
+    title = input("Enter the album title: ")
+    if (title=='q'):
+        break
+    num = input("Enter the number of songs: ")
+    if (num=='q'):
+        break
+    if num == "":
+        info = make_album(artist_name=name, album_title=title)
+    else:
+        info = make_album(artist_name=name, album_title=title, num_of_songs=int(num))
+
+    print(info)
+
+# Or,
+def make_album(artist_name, album_title, num_of_songs= None):
+    album = {'artist': artist_name, 'title': album_title}
+    if num_of_songs:
+        album['songs'] = num_of_songs
+    # print(album)
+    return album
+
+while True:
+    print(f"Please enter the informations about the album-")
+    print("(Enter 'q' to quit.)")
+    name = input("Enter artist name: ")
+    title = input("Enter the album title: ")
+    num = input("Enter the number of songs: ")
+    if (name=='q') or (title=='q') or (num=='q'):
+        break
+    if num == "":
+        info = make_album(artist_name=name, album_title=title)
+    else:
+        info = make_album(artist_name=name, album_title=title, num_of_songs=int(num))
+
+    print(info)
