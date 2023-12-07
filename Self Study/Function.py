@@ -83,3 +83,15 @@ def describe_city(city, country='Bangladesh'):
 describe_city('dhaka')
 describe_city(city="noakhli")
 describe_city(city='Reykjavik', country="iceland")
+
+
+# Ex-3:
+# formatted_name.py
+def fromatted_name(first_name, last_name):
+    """Return a full name, neatly formatted."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+name = fromatted_name('musfique', 'ahmed')
+print(name)
+
