@@ -74,3 +74,12 @@ def make_shirt(size='L', message="I love Python!"):
 make_shirt()
 make_shirt(size='M')
 make_shirt(size="Any Size", message="All my friends are TOXIC!\n\t\t They are so rude and always negative...")
+
+# 8-5. Cities:
+def describe_city(city, country='Bangladesh'):
+    """Print a simple sentence stating where the city is located."""
+    print(f"{city.title()} is in {country.title()}.")
+
+describe_city('dhaka')
+describe_city(city="noakhli")
+describe_city(city='Reykjavik', country="iceland")
