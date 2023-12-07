@@ -1,4 +1,4 @@
-#Ex - 1:
+## Ex - 1:
 def greet_user():
     """Display a simple greeting."""
     print("Hello World!")
@@ -10,8 +10,8 @@ def greet_user(username):
 greet_user("Musfique")
 
 
-#T I Y -
-#8-1:
+## T I Y -
+# 8-1:
 def display_message(x):
     """Describes what I am learning about in this chapter."""
     print(f"I am learning about {x} in this chapter.")
@@ -25,4 +25,4 @@ def favourite_book(X):
 favourite_book("Alice in Wonderland")
 
 
-#Ex - 2:
+## Ex - 2:
