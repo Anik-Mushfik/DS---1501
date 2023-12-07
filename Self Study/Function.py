@@ -95,3 +95,30 @@ def fromatted_name(first_name, last_name):
 name = fromatted_name('musfique', 'ahmed')
 print(name)
 
+
+def formatted_name(first_name, last_name, midle_name=''):
+    """Return a full name, neatly formatted."""
+    if midle_name:
+        full_name = f"{first_name} {midle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+name = formatted_name('mushfi', 'ahmed', 'lee')
+print(name)
+name = formatted_name('mushfi', 'ahmed')
+print(name)
+
+# Or, 
+def formatted_name(first_name, last_name, midle_name=''):
+    """Return a full name, neatly formatted."""
+    if midle_name:
+        return f"{first_name} {midle_name} {last_name}"
+    return f"{first_name} {last_name}"
+
+name = formatted_name('mushfi', 'ahmed', 'lee')
+print(name.title())
+name = formatted_name('mushfi', 'ahmed')
+print(name.title())
+
+
