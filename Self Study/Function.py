@@ -334,3 +334,33 @@ send_messages(unsent=unsent_message[:], sent=sent_message)
 
 print(unsent_message)
 print(sent_message)
+
+
+# Ex - 6:
+# pizza.py
+def make_pizza(*toppings): # (*) makes tuples.
+    """Print the list of toppings."""
+    print(toppings)
+make_pizza('alu', 'peyaj', 'roshun', 'ada')
+make_pizza('gajor')
+
+# pizza.py
+def make_pizza(*toppings): # (*) makes tuples.
+    """Summarize the pizza."""
+    print(f"\nMaking a pizza with following toppings:")
+    for toppping in toppings:
+        print(f" -{toppping.title()}")
+
+make_pizza('alu', 'peyaj', 'roshun', 'ada')
+make_pizza('gajor')
+
+# pizza.py
+def make_pizza(size, *toppings): # (*) makes tuples.
+    """Summarize the pizza."""
+    print(f"\nMaking a {size}-inch pizza with following toppings:")
+    for toppping in toppings:
+        print(f" -{toppping.title()}")
+
+make_pizza(12, 'alu', 'peyaj', 'roshun', 'ada')
+make_pizza(9, 'gajor')
+
