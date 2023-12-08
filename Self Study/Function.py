@@ -288,3 +288,49 @@ printed(printed=printed_design)
 print(unprinted_design)
 
 
+## T I Y -
+# 8-9. Messages:
+def show_messages(mess):
+    """Print each text message."""
+    for i in mess:
+        print(i.capitalize())
+    
+lst = ['hi', 'hello', 'bye', 'who are you?']
+show_messages(lst)
+# Or,
+def show_messages(*mess):
+    """Print each text message."""
+    for i in mess:
+        print(i.capitalize())
+    
+show_messages('hi', 'hello', 'bye', 'who are you?')
+
+# 8-10. Sending Messages:
+def send_messages(unsent, sent):
+    """Print each text message."""
+    while unsent:
+        message = unsent.pop()
+        print(message.capitalize())
+        sent.append(message)
+
+unsent_message = ['hi', 'hello', 'bye', 'who are you?']
+sent_message = []
+send_messages(unsent=unsent_message, sent=sent_message)
+
+print(unsent_message)
+print(sent_message)
+
+# 8-11. Archived Messages:
+def send_messages(unsent, sent):
+    """Print each text message."""
+    while unsent:
+        message = unsent.pop()
+        print(message.capitalize())
+        sent.append(message)
+
+unsent_message = ['hi', 'hello', 'bye', 'who are you?']
+sent_message = []
+send_messages(unsent=unsent_message[:], sent=sent_message)
+
+print(unsent_message)
+print(sent_message)
