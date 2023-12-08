@@ -223,3 +223,49 @@ while True:
         info = make_album(artist_name=name, album_title=title, num_of_songs=int(num))
 
     print(info)
+
+
+# Ex - 5:
+# GREET_USRE.py
+def greet_user(users):
+    """Print a siple greeting to each user in the list"""
+    for user in users:
+        msg = f"Hello {user.title()}."
+        print(msg)
+    
+lst = ['anas', 'abu', 'usfique']
+greet_user(lst)
+
+
+# printing_models.py
+# normal veersion-
+unprinted_design = ['ohone case', 'robot pendant', 'dodecahedron']
+printed_design = []
+while unprinted_design:
+    current_desing = unprinted_design.pop()
+    print(f"Printing Model: {current_desing.title()}")
+    printed_design.append(current_desing)
+
+print(f"\nThe following models have been printed-")
+for i in printed_design:
+    print(i.title())
+
+# Function version - 
+def printing(unprinted, printed):
+    while unprinted:
+        current = unprinted.pop()
+        print(f"Printing Model: {current.title()}")
+        printed.append(current)
+
+def printed(printed):
+    print("\nThe following desings have been printed-")
+    for design in printed:
+        print(design.title())
+
+unprinted_design = ['ohone case', 'robot pendant', 'dodecahedron']
+printed_design = []
+
+printing(unprinted=unprinted_design, printed=printed_design)
+printed(printed=printed_design)
+
+
