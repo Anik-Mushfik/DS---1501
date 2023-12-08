@@ -268,4 +268,23 @@ printed_design = []
 printing(unprinted=unprinted_design, printed=printed_design)
 printed(printed=printed_design)
 
+# printing_models.py
+def printing(unprinted, printed):
+    while unprinted:
+        current = unprinted.pop()
+        print(f"Printing Model: {current.title()}")
+        printed.append(current)
+
+def printed(printed):
+    print("\nThe following desings have been printed-")
+    for design in printed:
+        print(design.title())
+
+unprinted_design = ['ohone case', 'robot pendant', 'dodecahedron']
+printed_design = []
+
+printing(unprinted=unprinted_design[:], printed=printed_design)
+printed(printed=printed_design)
+print(unprinted_design)
+
 
