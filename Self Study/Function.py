@@ -364,3 +364,55 @@ def make_pizza(size, *toppings): # (*) makes tuples.
 make_pizza(12, 'alu', 'peyaj', 'roshun', 'ada')
 make_pizza(9, 'gajor')
 
+# Ex - 7:
+# user_profile.py
+def build_profile(first, last, **user_info): #Arbitrary keyword arguments
+    """Build a dictionary containing everyting we know about a user"""
+    user_info['first'] = first
+    user_info['last'] = last
+    return user_info
+
+user_profile = build_profile('naik','baik', 
+                             location = 'uganda',
+                             feild = 'Data Science')
+print(user_profile)
+
+
+## T I Y -
+# 8-12. Sandwiches:
+def make_sandwich(*items):
+    """Print a summary of the Sandwich"""
+    print(f"Making a Sandwich with following toppings- ")
+    for item in items:
+        print(f" - {item.capitalize()}")
+
+make_sandwich('egg', 'tomato', 'beef', 'chezz', 'theze nuts')
+
+# 8-13. User Profile:
+# user_profile.py
+def build_profile(first, last, **user_info): #Arbitrary keyword arguments
+    """Build a dictionary containing everyting we know about a user"""
+    user_info['first'] = first
+    user_info['last'] = last
+    return user_info
+
+user_profile = build_profile('musfique','ahmed', 
+                             location = 'mirpur, dhaka', 
+                             degree = 'B.Sc', 
+                             feild = 'Data Science', )
+print(user_profile)
+# Or, 
+def build_profile(first, last, **user_info): #Arbitrary keyword arguments
+    """Build a dictionary containing everyting we know about a user"""
+    lst = list(user_info.items())
+    lst.insert(0, ('first', first))
+    lst.insert(1, ('last', last))
+    user_info = dict(lst)
+    return user_info
+
+user_profile = build_profile('musfique', 'ahmed', 
+                             location = 'mirpur, dhaka', 
+                             degree = 'B.Sc', 
+                             feild = 'Data Science', )
+print(user_profile)
+
