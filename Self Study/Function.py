@@ -416,3 +416,23 @@ user_profile = build_profile('musfique', 'ahmed',
                              feild = 'Data Science', )
 print(user_profile)
 
+# 8-14. Cars:
+def make_car(manufac, model, **other_info):
+    """Print the dictionary with all the informations"""
+    other_info['manufacturer'] = manufac
+    other_info['model'] = model
+    return other_info
+
+car = make_car('subaru', 'outback', color = 'blue', two_package = True)
+print(car)
+# Or, 
+def make_car(manufac, model, **other_info):
+    """Print the dictionary with all the informations"""
+    lst = list(other_info.items())
+    lst.insert(0, ('manufacturer', manufac))
+    lst.insert(1, ('model', model))
+    other_info = dict(lst)
+    return other_info
+
+car = make_car('subaru', 'outback', color = 'blue', two_package = True)
+print(car)
