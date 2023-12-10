@@ -40,7 +40,7 @@ describe_pet("hamster", 'sala')
 describe_pet(animal_type='dog', pet_name='kutta') # Order doesn't matter for keyword arguments.
 describe_pet(pet_name='sagol', animal_type="cow")
 
-def describe_pet(pet_name, animal_type= 'dog'):
+def describe_pet(pet_name, animal_type='dog'):
     print(f"I have a {animal_type}")
     print(f"My {animal_type}'s nami is {pet_name}")
 
@@ -132,7 +132,7 @@ def build_person(first_name, last_name):
 info = build_person('musfique', 'ahmed')
 print(info)
 
-def build_person(first_name, last_name, age= None):
+def build_person(first_name, last_name, age=None):
     """Return a dictionary of information about a person."""
     person = {'first': first_name, 'last': last_name}
     if age:
@@ -141,7 +141,7 @@ def build_person(first_name, last_name, age= None):
 
 info = build_person('musfique', 'ahmed', 27)
 print(info)
-info = build_person('musfique', 'ahmed', age= 27)
+info = build_person('musfique', 'ahmed', age=27)
 print(info)
 
 # greeter.py
@@ -202,7 +202,7 @@ while True:
     print(info)
 
 # Or,
-def make_album(artist_name, album_title, num_of_songs= None):
+def make_album(artist_name, album_title, num_of_songs=None):
     album = {'artist': artist_name, 'title': album_title}
     if num_of_songs:
         album['songs'] = num_of_songs
@@ -373,8 +373,8 @@ def build_profile(first, last, **user_info): #Arbitrary keyword arguments
     return user_info
 
 user_profile = build_profile('naik','baik', 
-                             location = 'uganda',
-                             feild = 'Data Science')
+                             location='uganda',
+                             feild='Data Science')
 print(user_profile)
 
 
@@ -397,9 +397,9 @@ def build_profile(first, last, **user_info): #Arbitrary keyword arguments
     return user_info
 
 user_profile = build_profile('musfique','ahmed', 
-                             location = 'mirpur, dhaka', 
-                             degree = 'B.Sc', 
-                             feild = 'Data Science', )
+                             location='mirpur, dhaka', 
+                             degree='B.Sc', 
+                             feild='Data Science', )
 print(user_profile)
 # Or, 
 def build_profile(first, last, **user_info): #Arbitrary keyword arguments
@@ -411,9 +411,9 @@ def build_profile(first, last, **user_info): #Arbitrary keyword arguments
     return user_info
 
 user_profile = build_profile('musfique', 'ahmed', 
-                             location = 'mirpur, dhaka', 
-                             degree = 'B.Sc', 
-                             feild = 'Data Science', )
+                             location='mirpur, dhaka', 
+                             degree='B.Sc', 
+                             feild='Data Science', )
 print(user_profile)
 
 # 8-14. Cars:
@@ -423,7 +423,7 @@ def make_car(manufac, model, **other_info):
     other_info['model'] = model
     return other_info
 
-car = make_car('subaru', 'outback', color = 'blue', two_package = True)
+car = make_car('subaru', 'outback', color='blue', two_package=True)
 print(car)
 # Or, 
 def make_car(manufac, model, **other_info):
@@ -434,5 +434,5 @@ def make_car(manufac, model, **other_info):
     other_info = dict(lst)
     return other_info
 
-car = make_car('subaru', 'outback', color = 'blue', two_package = True)
+car = make_car('subaru', 'outback', color='blue', two_package=True)
 print(car)
