@@ -89,3 +89,56 @@ num1 = int(input())
 num2 = int(input())
 sp = swap(num1, num2)
 print(f"Value in main: {num1} {num2}")
+
+
+# Problem - 6:
+def swap2(lst):
+    """Swap two numbers(Pass by reference or, 
+    "pass by object reference" or, 
+    "pass by assignment.")"""
+    lst[0], lst[1] = lst[1], lst[0]
+    print(f"Value in func: {lst[0]} {lst[1]}")
+    return lst
+
+in_lst = list(map(int, input().split()))
+out = swap2(in_lst)
+print(f"Value in main: {in_lst[0]} {in_lst[1]}")
+
+
+# Problem - 7:
+def even_num(lst):
+    """Determine only even numbers in an array of input integers"""
+    even = []
+    for i in lst:
+        if i%2 == 0:
+          even.append(i)
+    return even
+
+in_lst = list(map(int, input().split()))
+out = even_num(in_lst)
+print(*out)
+
+
+# Problem - 8:
+def min_value(lst):
+    """Find and return the minimum value in a list"""
+    val = min(lst)
+    return val
+
+in_lst = list(map(int, input().split()))
+out = min_value(in_lst)
+print(f"Minimum Value: {out}")
+# Or, 
+def min_value(lst):
+    """Find and return the minimum value in a list"""
+    val = lst[0]
+    for i in lst:
+        if i < val:
+            val = i
+    return val
+
+in_lst = list(map(int, input().split()))
+out = min_value(in_lst)
+print(f"Minimum Value: {out}")
+
+
