@@ -68,3 +68,24 @@ sumation = calculate_sum(lst)
 print(f"Sum In Main: {sumation}")
 
 
+# Problem - 5:
+def swap(a, b):
+    """Swap two numbers(Pass by value)"""
+    a,b = b,a
+    print(f"Value in func: {a} {b}")
+    return a,b
+
+lst = list(map(int, input().split()))
+sp = swap(lst[0], lst[1])
+print(f"Value in main: {lst[0]} {lst[1]}")
+# Or,
+def swap(a, b):
+    """Swap two numbers(Pass by value)"""
+    a,b = b,a
+    print(f"Value in func: {a} {b}")
+    return a,b
+
+num1 = int(input())
+num2 = int(input())
+sp = swap(num1, num2)
+print(f"Value in main: {num1} {num2}")
