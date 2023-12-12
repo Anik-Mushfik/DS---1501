@@ -175,6 +175,20 @@ lst1 = list(map(int, input("Enter your list:\n").split()))
 out = acsending_list(lst1)
 print(f"List in ascending order:")
 print(*out)
+# Or, 
+def acsending_list(lst):
+    """Sort and return an input array in ascending order"""
+    lst2 = []
+    while lst:
+        x = min(lst)
+        lst2.append(x)
+        lst.remove(x)
+    return lst2
+
+lst1 = list(map(int, input("Enter your list:\n").split()))
+out = acsending_list(lst1)
+print(f"List in ascending order:")
+print(*out)
 
 
 # Problem - 11:
@@ -190,3 +204,26 @@ def isPrime(n):
 print(isPrime(169))
 
 
+# Problem - 12:
+def isPrime(n):
+    """Determine whether a number is prime or not"""
+    if n < 2: #jodi eta hoye jaye taile false diye dibe
+        return False
+    for i in range(2,((n//2)+1)): #uporer ta na hoile then eta dekhbe eta hoile false dibe
+        if n%i == 0:
+            return False
+    return True #uporer konotai na hoile then eta dekhbe and true dibe
+
+def allNum(num):
+    """Iterate all the numbers until """
+    primes = []
+    for i in range(2,num):
+        x = isPrime(i)
+        if x:
+            primes.append(i)
+    return primes
+
+in_num = int(input("Enter the number: "))
+out = allNum(in_num)
+print(f"Prime less than {in_num}: ",end="")
+print(*out, sep=",")
