@@ -142,3 +142,51 @@ out = min_value(in_lst)
 print(f"Minimum Value: {out}")
 
 
+# Problem - 9:
+def list_multiply(lst0):
+    """Multiplies the array elements by 2 and returns the array."""
+    lst2 = []
+    for i in lst0:
+        lst2.append(i*2)
+    return lst2
+
+in_lst = list(map(int, input("Enter your list:\n").split()))
+print(f"Multiplied list:")
+print(*list_multiply(in_lst))
+
+# Or, #A list changes parmanently even if you modify it in a function.
+def list_multiply(lst0):
+    """Multiplies the array elements by 2 and returns the array."""
+    for i in range(len(lst0)):
+        lst0[i] = lst0[i] *2
+
+lst1 = list(map(int, input("Enter your list:\n").split()))
+list_multiply(lst1)
+print(f"Multiplied list:")
+print(*lst1)
+
+
+# Problem - 10:
+def acsending_list(lst):
+    """Sort and return an input array in ascending order"""
+    return sorted(lst)
+
+lst1 = list(map(int, input("Enter your list:\n").split()))
+out = acsending_list(lst1)
+print(f"List in ascending order:")
+print(*out)
+
+
+# Problem - 11:
+def isPrime(n):
+    """Determine whether a number is prime or not"""
+    if n < 2: #jodi eta hoye jaye taile false diye dibe
+        return False
+    for i in range(2,((n//2)+1)): #uporer ta na hoile then eta dekhbe eta hoile false dibe
+        if n%i == 0:
+            return False
+    return True #uporer konotai na hoile then eta dekhbe and true dibe
+
+print(isPrime(169))
+
+
