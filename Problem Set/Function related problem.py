@@ -227,3 +227,69 @@ in_num = int(input("Enter the number: "))
 out = allNum(in_num)
 print(f"Prime less than {in_num}: ",end="")
 print(*out, sep=",")
+
+
+# Problem - 13:
+# Testing-
+def GenNthPrime(n):
+    """Compute the Nth prime number"""
+    lst = []
+    if n<2:
+        is_prime = False
+    else:
+        is_prime = True
+        for i in range(2, ((n//2)+1)):
+            if n%i == 0:
+                is_prime = False
+                break
+
+    if is_prime:
+        lst2.append(n)
+        print(lst2)
+        lst.append(n)
+        print(lst)
+    return lst
+    
+def allnum(num):
+    """Provide all needed number to the function"""
+    x = 0
+    while len(lst2) < num:
+        print(len(lst2))
+        x += 1
+        print(f"x={x}")
+        GenNthPrime(x)
+        
+lst2 = []
+in_num = allnum(5)
+print(lst2)
+
+# Actual Programme:
+def GenNthPrime(n):
+    """Compute the Nth prime number"""
+    if n<2:
+        is_prime = False
+    else:
+        is_prime = True
+        for i in range(2, ((n//2)+1)):
+            if n%i == 0:
+                is_prime = False
+                break
+
+    last_prime = 0
+    if is_prime:
+        lst2.append(n)
+        last_prime = n
+    return last_prime
+    
+def allnum(num):
+    """Provide all needed number to the function"""
+    x = 0
+    while len(lst2) < num:
+        x += 1
+        GenNthPrime(x)
+    return x
+        
+lst2 = []
+user_num = int(input("Enter a number: "))
+in_num = allnum(user_num)
+print(f"{user_num}th Prime: {in_num}")
