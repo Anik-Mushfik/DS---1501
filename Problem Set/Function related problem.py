@@ -281,7 +281,7 @@ def GenNthPrime(n):
         last_prime = n
     return last_prime
     
-def allnum(num):
+def all_num(num):
     """Provide all needed number to the function"""
     x = 0
     while len(lst2) < num:
@@ -291,5 +291,5 @@ def allnum(num):
         
 lst2 = []
 user_num = int(input("Enter a number: "))
-in_num = allnum(user_num)
+in_num = all_num(user_num)
 print(f"{user_num}th Prime: {in_num}")
