@@ -227,6 +227,19 @@ in_num = int(input("Enter the number: "))
 out = allNum(in_num)
 print(f"Prime less than {in_num}: ",end="")
 print(*out, sep=",")
+# Or, (siam)
+def siam(n):
+	if n<2:
+		return False
+	for x in range(2,n):
+		if n%x==0:
+			return False
+	return True
+def general(low,high):
+	prime=[i for i in range(low,high+1) if siam(i)]
+	return prime
+    		
+print(general(2,10))
 
 
 # Problem - 13:
