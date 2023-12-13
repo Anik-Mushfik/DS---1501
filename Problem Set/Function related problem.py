@@ -293,3 +293,33 @@ lst2 = []
 user_num = int(input("Enter a number: "))
 in_num = all_num(user_num)
 print(f"{user_num}th Prime: {in_num}")
+
+#Or, Chat gpt-
+def is_prime(num):
+    # Function to check if a number is prime
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def GenNthPrime(N):
+    # Function to compute the Nth prime number
+    if N <= 0:
+        return "Invalid input. N should be a positive integer."
+    
+    prime_count = 0
+    num = 2
+    
+    while True:
+        if is_prime(num):
+            prime_count += 1
+            if prime_count == N:
+                return num
+        num += 1
+
+# Example usage
+N = int(input("Enter the value of N: "))
+result = GenNthPrime(N)
+print(f"The {N}th prime number is: {result}")
