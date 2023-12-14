@@ -336,3 +336,106 @@ def GenNthPrime(N):
 N = int(input("Enter the value of N: "))
 result = GenNthPrime(N)
 print(f"The {N}th prime number is: {result}")
+
+
+# Problem - 14:
+def Calc_Std_deviation(array, num_of_elem):
+    total = 0
+    for i in array:
+        x = (i-mean)**2
+        total += x
+    div = total/num_of_elem
+    std_dev = div**(0.5)
+    return round(std_dev,2)
+
+def CalcMean(array, num_of_elem):
+    mean = sum(array)/ num_of_elem
+    return mean
+
+def TakeInput():
+    lst = input("Enter the numbers:\n").split()
+    lst1 = [int(x) for x in lst]
+    return lst1
+
+data = TakeInput()
+num = len(data)
+mean = CalcMean(array=data, num_of_elem=num)
+S_d = Calc_Std_deviation(array=data, num_of_elem=num)
+print(f"Standard Deviation of the numbers: {S_d}")
+
+# Or,
+def distance_square(n):
+    des = mean - n
+    sqr = des**2
+    return sqr
+
+def summation(lst):
+    """Sum of the square of its distance to the mean"""
+    total = 0
+    sqr = 0
+    for i in lst:
+        sqr = distance_square(i)
+        total += sqr
+    return total
+
+def Standered_derivation(list_data):
+    sumat = summation(data)
+    gor = sumat/ len(data)
+    alpha = gor**(0.5)
+    return round(alpha,2)
+    
+data = list(map(int, input().split()))
+mean = sum(data)/len(data)
+stan_derv = Standered_derivation(data)
+print(stan_derv) 
+
+# Or,
+def distance_square(n):
+    des = mean - n
+    sqr = des**2
+    return sqr
+
+def summation(lst):
+    """Sum of the square of its distance to the mean"""
+    total = 0
+    sqr = 0
+    for i in lst:
+        sqr = distance_square(i)
+        total += sqr
+    return total
+
+data = list(map(int, input().split()))
+mean = sum(data)/len(data)
+sumat = summation(data)
+gor = sumat/ len(data)
+alpha = gor**(0.5)
+print(round(alpha,2))
+
+# Testing - 
+def distance_square(n):
+    des = mean - n
+    sqr = des**2
+    return sqr
+
+def summation(lst):
+    """Sum of the square of its distance to the mean"""
+    total = 0
+    sqr = 0
+    for i in lst:
+        sqr = distance_square(i)
+        total += sqr
+    
+        print(f"Total: {total}")
+        print(f"Square: {sqr}")
+    return total
+
+#data = list(map(int, input().split()))
+data = [4, 5, 5, 4, 4, 2, 2, 6]
+mean = sum(data)/len(data)
+print(mean)
+sumat = summation(data)#13.9392
+print(sumat)
+gor = sumat/ len(data)
+print(gor)#1.7424
+alpha = gor**(0.5)
+print(alpha)#1.32
