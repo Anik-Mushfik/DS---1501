@@ -439,3 +439,90 @@ gor = sumat/ len(data)
 print(gor)#1.7424
 alpha = gor**(0.5)
 print(alpha)#1.32
+
+
+# Problem - 15
+def find_substr(a, b):
+    """Find out if string 'b' is found anywhere in string 'a' or not"""
+    if b in a:
+        return 1
+    else:
+        return 0
+
+in_user = input().split()
+lst = [x for x in in_user]
+out = find_substr(a=lst[0], b=lst[1])
+print(out)
+
+
+# Problem - 16:
+def find_substr(a, b):
+    """Find out if string 'b' is found anywhere in string 'a' or not"""
+    if b in a:
+        return 1
+    else:
+        return 0
+
+def str_length(string):
+    """Determine the lengths of the strings"""
+    count = 0
+    for i in string:
+        count += 1
+    return count
+
+in_user = input().split()
+lst = [x for x in in_user]
+lenth1 = str_length(lst[0])
+lenth2 = str_length(lst[1])
+
+if lenth1 > lenth2:
+    out = find_substr(a=lst[0], b=lst[1])
+else:
+    out = find_substr(a=lst[1], b=lst[0])
+print(out)
+
+# Or, (mahi)
+def str_len(mahi):
+	count = 0
+	for letter in mahi:
+		count += 1
+	return count
+
+def find_subtr(a,b):
+	if str_len(b) > str_len(a):
+		b,a = a,b
+	if b in a:
+		print("1")
+	else:
+		print("0")
+		
+a = input()
+b = input()
+
+find_subtr(a,b)
+
+
+# Problem - 17:
+def devisor(n):
+    lst = [1,n]
+    for i in range(2,(n//2)+1):
+        if n%i == 0:
+            lst.append(i)
+    return lst
+
+lst = list(map(int, input().split()))
+n1_lst = devisor(lst[0])
+n2_lst = devisor(lst[1])
+
+def gcd(lst1, lst2):
+    common = []
+    for i in lst1:
+        if i in lst2:
+            common.append(i)
+    return max(common)
+
+gratest_cd = gcd(n1_lst, n2_lst)
+print(f"GCD: {gratest_cd}")
+
+lcm = (lst[0]*lst[1]) // gratest_cd
+print(f"LCM: {lcm}")
