@@ -526,3 +526,38 @@ print(f"GCD: {gratest_cd}")
 
 lcm = (lst[0]*lst[1]) // gratest_cd
 print(f"LCM: {lcm}")
+
+
+# Problem - 18:
+def ScalarMultiply(matri, n):
+    """Multiply the matrix with the inputed number."""
+    print(f"Multiplied by {n}:")
+    for i in matri:
+        for j in i:
+            x = j*n
+            print(x, end="\t")
+        print()
+
+def ShowMatrix(mat):
+    """Disply the original matrix"""
+    print(f"Original:")
+    for i in mat:
+        for j in i:
+            print(j, end="\t")
+        print()
+
+def InputMatrix():
+    """Take inupt for the matrix from the user"""
+    user_input = input().split()
+    lst = [int(x) for x in user_input]
+    matrix.append(lst)
+    
+matrix = []
+
+row_num = int(input("Enter the amount of rows: "))
+for i in range(row_num):
+    InputMatrix()
+num = int(input("Input the number you want to mutiply the matrix with: "))
+
+diplay = ShowMatrix(matrix)
+multiply = ScalarMultiply(matri=matrix, n=num)
