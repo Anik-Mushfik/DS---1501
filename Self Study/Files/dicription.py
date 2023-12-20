@@ -1,4 +1,4 @@
-def cipher(text):
+def cipher_dico(text):
     new = ''
     for i in text:
         asci = ord(i)
@@ -14,5 +14,5 @@ def cipher(text):
 
 file = open("F:\Study\Python\DS---1501\Self Study\Files\encripted_text.txt", "r")
 data = file.read()
-new_text = cipher(data)
+new_text = cipher_dico(data)
 print(new_text)
