@@ -603,3 +603,24 @@ num = int(input("\nMultiply by:\n"))
 
 diplay = ShowMatrix(matrix)
 multiply = ScalarMultiply(matri=matrix, n=num)
+
+# Problem - 20:
+
+
+def Convert_Number (N, B):
+    """Does the conversion"""
+
+
+def Get_Number_And_Base ():
+    """Takes number to be converted (N) and base value (B) 
+    from user. Base must be between 2 and 16."""
+    lst = list(map(int, input().split()))
+    num = lst[0]
+    if (2< lst[2] <16):
+        base = lst[1]
+    else:
+        print(f"Base not within proper range!")
+    return Convert_Number(N=num, B=base)
+
+
+out = Get_Number_And_Base()
