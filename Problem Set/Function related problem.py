@@ -447,8 +447,7 @@ def find_substr(a, b):
     else:
         return 0
 
-in_user = input().split()
-lst = [x for x in in_user]
+lst = input().split()
 out = find_substr(a=lst[0], b=lst[1])
 print(out)
 
@@ -468,8 +467,7 @@ def str_length(string):
         count += 1
     return count
 
-in_user = input().split()
-lst = [x for x in in_user]
+lst = input().split()
 lenth1 = str_length(lst[0])
 lenth2 = str_length(lst[1])
 
@@ -478,6 +476,7 @@ if lenth1 > lenth2:
 else:
     out = find_substr(a=lst[1], b=lst[0])
 print(out)
+
 
 # Or, (mahi)
 def str_len(mahi):
