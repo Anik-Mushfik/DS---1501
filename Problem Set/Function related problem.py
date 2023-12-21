@@ -288,12 +288,9 @@ def GenNthPrime(n):
                 is_prime = False
                 break
 
-    last_prime = 0
     if is_prime:
         lst2.append(n)
-        last_prime = n
-    return last_prime
-    
+ 
 def all_num(num):
     """Provide all needed number to the function"""
     x = 0
@@ -301,11 +298,12 @@ def all_num(num):
         x += 1
         GenNthPrime(x)
     return x
-        
+   
 lst2 = []
 user_num = int(input("Enter a number: "))
 in_num = all_num(user_num)
 print(f"{user_num}th Prime: {in_num}")
+
 
 #Or, Chat gpt-
 def is_prime(num):
