@@ -12,7 +12,7 @@ def cipher_dico(text):
     
     return new
 
-file = open("F:\Study\Python\DS---1501\Self Study\Files\encripted_text.txt", "r")
+file = open("D:/Python Study/DS---1501/Self Study/Files/encripted_text.txt", "r")
 data = file.read()
 new_text = cipher_dico(data)
 print(new_text)

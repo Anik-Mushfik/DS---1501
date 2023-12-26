@@ -12,11 +12,12 @@ def cipher_enco(text):
     
     return new
 
-file = open("F:\Study\Python\DS---1501\Self Study\Files\message.txt", "r")
+file = open("D:/Python Study/DS---1501/Self Study/Files/message.txt", "r")
 data = file.read()
 new_text = cipher_enco(data)
 print(new_text)
 file.close()
   
-file = open("F:\Study\Python\DS---1501\Self Study\Files\encripted_text.txt","w")
+file = open("D:/Python Study/DS---1501/Self Study/Files/encripted_text.txt","w")
 file.write(new_text)
+file.close()

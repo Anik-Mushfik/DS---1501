@@ -2,11 +2,12 @@
 # write--> w
 # append--> a
 
-file = open('F:/Study/Python/DS---1501/Self Study/Files/message.txt', 'r')
+file = open('D:/Python Study/DS---1501/Self Study/Files/message.txt', 'r')
 data = file.read()
 print(data)
+file.close()
 
-file = open('F:/Study/Python/DS---1502/CW/lab_message.txt', 'r')
+file = open('D:/Python Study/DS---1501/Self Study/Files/encripted_text.txt', 'r')
 data = file.read()
 print(data)
-
+file.close()
