@@ -1,7 +1,7 @@
 from enco import cipher_enco
 from dicri import cipher_dico
 
-file = open("F:\Study\Python\DS---1501\Self Study\Files\message.txt","r")
+file = open("D:\Python Study\DS---1501\Self Study\Files\Cipher\message.txt","r")
 text = file.read()
 print(text)
 new_text = cipher_enco(text)
