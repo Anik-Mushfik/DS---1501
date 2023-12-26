@@ -1,4 +1,5 @@
-file = open("D:\Python Study\DS---1501\Self Study\Files\Book\pi_digits.txt", "r")
+file = open("pi_digits.txt", "r")
 data = file.read()
+data = data.rstrip('\n')
 print(data)
 file.close()
