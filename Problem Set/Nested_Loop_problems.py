@@ -187,3 +187,138 @@ input_value = int(input("Enter a number: "))
 print_pattern(input_value)
 
 
+# Problem - 16:
+n = int(input())
+for i in range(1, n+1):
+    for j in range(1, n+1):
+        if (i==j) or (j == (n+1)-i):
+            print('*', end="")
+        else:
+            print('_', end="")
+    print()
+
+# Or, 
+n = int(input())
+for i in range(n):
+    for j in range(n):
+        if (i==j) or (j ==(n-1)-i):
+            print('*', end="")
+        else:
+            print('_', end="")
+    print()
+
+# Co-pilot -
+# Define the input
+n = 7
+
+# Loop through the rows
+for i in range(n):
+    # Loop through the columns
+    for j in range(n):
+        # Check if the row and column are equal or opposite
+        if i == j or i == n - j - 1:
+            # Print a star
+            print("*", end="")
+        else:
+            # Print an underscore
+            print("_", end="")
+    # Print a new line
+    print()
+
+# Or, (Doesn't work with inputs more than 5)
+n = int(input())
+for i in range(1, n+1):
+    if (i==1) or (i==n):
+        for j in range(1,n+1):
+            if (j==1) or (j==n):
+                print('*', end="")
+            else:
+                print('_', end="")
+    else:
+        for j in range(1,n+1):
+            if (j==1) or (j==n):
+                print('_', end="")
+            elif (i%2 == 0):
+                if (j%2 == 0):
+                    print('*', end="")
+                else:
+                    print('_', end="")
+            else:
+                if (j%2 != 0):
+                    print('*', end="")
+                else:
+                    print('_', end="")
+
+    print()
+
+
+# Problem - 17:
+n = int(input())
+x = (n//2)+1
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if (i == x) or (j == x):
+            print('$', end="")
+        elif (j == x-(i-1)) or (j == x+(i-1)) or (j == x-(n-i)) or (j == x+(n-i)):
+            print('$', end="")
+        else:
+            print('_', end="")
+    print()
+
+# Or,
+
+
+
+# Problem - 18:
+n = int(input())
+for i in range(1,n+1):
+    if (i == (n//2)+1):
+        for j in range(n):
+            print("H",end=" ")
+    else:
+        for j in range(1, n+1):
+            if (j==1) or (j==n):
+                print('H', end=" ")
+            else:
+                print(' ', end=" ")
+    print()
+
+
+
+# Python code to print a dollar pattern
+# Input: 13
+# Output:
+# $_____$_____$
+# _$____$____$_
+# __$___$___$__
+# ___$__$__$___
+# ____$_$_$____
+# _____$$$_____
+# $$$$$$$$$$$$$
+# _____$$$_____
+# ____$_$_$____
+# ___$__$__$___
+# __$___$___$__
+# _$____$____$_
+# $_____$_____$
+
+# Define the input
+n = 13
+
+# Loop through the rows
+for i in range(n):
+    # Loop through the columns
+    for j in range(n):
+        # Check if the row and column are equal or opposite
+        if i == j or i == n - j - 1:
+            # Print a dollar
+            print("$", end="")
+        # Check if the row or column is the middle one
+        elif i == n // 2 or j == n // 2:
+            # Print a dollar
+            print("$", end="")
+        else:
+            # Print an underscore
+            print("_", end="")
+    # Print a new line
+    print()
