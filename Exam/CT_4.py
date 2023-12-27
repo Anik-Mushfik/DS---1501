@@ -13,3 +13,8 @@ for i in icc_champion_pred.keys():
     print(f"Thanks {name} for taking the poll.")
 print(audidences)
 print(*[f"\nHi {v}, please take the poll."for v in audidences])
+
+
+# [city er name]
+# [why famous]
+# make dict
