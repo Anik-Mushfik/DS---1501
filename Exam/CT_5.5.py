@@ -11,6 +11,18 @@ factor = fuactorial(num)
 print(factor)
 
 
+# Problem - 2:
+def pattern_printing(num):
+    """Prints a specific pattern based on the input"""
+    for i in range(1,num+1):
+        for j in range(1,i+1):
+            print(j, end=" ")
+        print()
+
+n = int(input("Enter the number: "))
+pattern_printing(n)
+
+
 # Qus - 3:
 def calculate_sum(*lst):
     """Print the sum of the numbers coming from the console"""
