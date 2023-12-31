@@ -1,5 +1,5 @@
 ### => Online class - Saddam sir - 15/11/2023
-"""
+
 #Printing from a dictionary -
 human = {'name': 'rubayet', 'gender': 'male', 'age': 25}
 print(human['age'])
@@ -97,7 +97,7 @@ for k, v in tracks.items():
     for i in v:
         print(f"{k}: {i}")
     print()
-"""
+
 
 
 
@@ -105,7 +105,7 @@ for k, v in tracks.items():
 ### => 'Python Crash Course' Book -
 
 # alien_0.py
-"""
+
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0['color'])
 print(alien_0['points'])
@@ -674,4 +674,3 @@ print(u_value)
 v_value = {val for dic in L for val in dic.values()}
 print(v_value)
 
-"""
