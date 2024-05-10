@@ -37,4 +37,55 @@ print(*min_neigh, sep="\n=>")
 def evenSum(x,y):
     """Find the even numbers in the range of (x-y) 
     and return the sum of those even numbers."""
-        
+    sum = 0
+    for i in range(x, y+1):
+        if i % 2 == 0:
+            sum += i
+
+    return sum
+
+print(evenSum(1,10))
+
+
+# (b):
+
+
+
+
+
+
+
+
+# 4 = >
+f = open("source.txt","r")
+content = f.readlines()
+
+for i in content:
+    i.split(" ")
+    #print(i)
+    content = i
+
+low = content.lower()
+spl = low.split()
+
+v_lst = []
+for j in spl:
+   
+    if j[0] == "a" or j[0] == "e" or j[0] == "i" or j[0] == "o" or j[0] == "u":
+        v_lst.append(j)
+
+print(v_lst)
+
+finalString = " "
+for k in v_lst:
+    if k == v_lst[-1]:
+        finalString += f"{k}."
+    else:
+        finalString += f"{k}, "
+
+print(finalString)
+f.close()
+
+w = open("desh.txt","w")
+w.write(finalString)
+w.close()
