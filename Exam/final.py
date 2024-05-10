@@ -48,13 +48,45 @@ print(evenSum(1,10))
 
 
 # (b):
+""" Out of Syllabus"""
 
 
 
 
 
+# 3 = >
+# (a) 
+def bello(a):
+    a[2]=9
+    a[3]=5
+a = [1,2,3,4,5,6]
+bello(a[:])
+print(a)
+# OutPut => 
+"""[1, 2, 3, 4, 5, 6]"""
 
 
+# (b) 
+def hello(t):
+    t.append(0) 
+    print(t)
+hello((1,2,3))
+# OutPut => 
+"""t.append(0) 
+^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'"""
+
+
+# (c) 
+import numpy as np
+def gello(a):
+    a[0]=0
+    a[1]=0
+a = np.array([1,2,3,4,5,6,7,8])
+gello(a[-5:5])
+print(a)
+# OutPut => 
+"""[1 2 3 0 0 6 7 8]"""
 
 # 4 = >
 f = open("source.txt","r")
